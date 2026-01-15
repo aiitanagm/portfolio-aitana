@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aitana Portfolio</title>
+  <link rel="stylesheet" href="../CSS/portfolio.css">
+</head>
+
+<canvas id="cursor-canvas"></canvas>
+
+<body>
+
+<!-- STRIP SUPERIOR -->
+<header class="top-strip">
+  <a href="#projects"><img src="../img/projecto1.png"></a>
+  <a href="#projects"><img src="../img/projecto2.JPG"></a>
+  <a href="#projects"><img src="../img/projecto3.jpg"></a>
+  <a href="#projects"><img src="../img/projecto4.jpg"></a>
+  <a href="#projects"><img src="../img/projecto5.jpeg"></a>
+  <a href="#projects"><img src="../img/projecto6.png"></a>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h1 class="name" id="hero-name">
+    <span>A</span>
+    <span>I</span>
+    <span>T</span>
+    <span>A</span>
+    <span>N</span>
+    <span>A</span>
+  </h1>
+  <nav class="menu">
+    <a href="#home">Home</a>
+    <a href="#about">Sobre mí</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#" id="contactBtn">Contacto</a>
+  </nav>
+</section>
+
+<!-- SOBRE MI -->
+<section class="about" id="about">
+  <p>
+    Diseñadora de producto con una mirada multidisciplinar, creativa y curiosa.
+    Mi trabajo se caracteriza por un enfoque inquieto y rebelde que cuestiona
+    lo establecido, buscando soluciones innovadoras que sorprendan tanto en la
+    forma como en la experiencia.
+  </p>
+</section>
+
+<!-- PROYECTOS -->
+<section class="projects" id="projects">
+
+  <article class="project-card" data-project="cumming">
+    <div class="project-cover">
+      <img alt="">
+   </div>
+    <div class="project-info">
+      <span class="num">01</span>
+      <h2>CUMMMING</h2>
+      <p>Creación de marca, identidad y packaging.</p>
+    </div>
+  </article>
+
+  <article class="project-card" data-project="gnomo">
+    <div class="project-cover">
+      <img alt="">
+   </div>
+    <div class="project-info">
+      <span class="num">02</span>
+      <h2>GNOMO</h2>
+      <p>Packaging lúdico sostenible.</p>
+    </div>
+  </article>
+
+  <article class="project-card" data-project="moxi">
+    <div class="project-cover">
+      <img alt="">
+   </div>
+    <div class="project-info">
+      <span class="num">03</span>
+      <h2>MOXIE</h2>
+      <p>App contra la ansiedad social.</p>
+    </div>
+  </article>
+
+  <article class="project-card" data-project="musu">
+    <div class="project-cover">
+      <img alt="">
+   </div>
+    <div class="project-info">
+      <span class="num">04</span>
+      <h2>MUSU</h2>
+      <p>Herramienta funcional de doble uso.</p>
+    </div>
+  </article>
+
+  <article class="project-card" data-project="paticleta">
+    <div class="project-cover">
+      <img alt="">
+   </div>
+    <div class="project-info">
+      <span class="num">05</span>
+      <h2>PATICLETA</h2>
+      <p>Vehículo infantil de equilibrio.</p>
+    </div>
+  </article>
+
+  <article class="project-card" data-project="trump">
+    <div class="project-cover">
+      <img alt="">
+   </div>
+    <div class="project-info">
+      <span class="num">06</span>
+      <h2>TRMP</h2>
+      <p>Muñeco crítico caricaturizado en 3D.</p>
+    </div>
+  </article>
+
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="hidden">
+  <button id="prev">‹</button>
+  <img id="lightbox-img">
+  <button id="next">›</button>
+</div>
+
+<script src="../JS/portfolio.js"></script>
+</body>
+</html>
