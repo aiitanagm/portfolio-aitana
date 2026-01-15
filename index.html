@@ -1,148 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aitana Portfolio</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/portfolio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Alert</title>
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
-
 <body>
+    
+  <!-- Fondo -->
+  <div class="background"></div>
 
-<!-- CANVAS CURSOR -->
-<canvas id="cursor-canvas"></canvas>
+  <!-- Contenedor de alerts random -->
+  <div id="random-alerts"></div>
 
-<!-- ALERT INICIAL -->
-<div class="background"></div>
-
-<div class="alert main-alert" id="entryAlert">
-  <div class="alert-header">
-    <span>System Warning</span>
-    <span class="x">✕</span>
-  </div>
-  <div class="alert-body">
-    <p>
-      This site may contain experimental content.<br>
-      Proceed at your own risk.
-    </p>
-  </div>
-  <div class="alert-footer">
-    <button id="proceedBtn">Proceed</button>
-  </div>
-</div>
-
-<!-- ===== PORTFOLIO ===== -->
-<div id="portfolio" style="display:none;">
-
-  <!-- STRIP -->
-  <header class="top-strip">
-    <a href="#projects"><img src="img/projecto1.png"></a>
-    <a href="#projects"><img src="img/projecto2.JPG"></a>
-    <a href="#projects"><img src="img/projecto3.jpg"></a>
-    <a href="#projects"><img src="img/projecto4.jpg"></a>
-    <a href="#projects"><img src="img/projecto5.jpeg"></a>
-    <a href="#projects"><img src="img/projecto6.png"></a>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <h1 class="name" id="hero-name">
-      <span>A</span><span>I</span><span>T</span><span>A</span><span>N</span><span>A</span>
-    </h1>
-
-    <nav class="menu">
-      <a href="#home">Home</a>
-      <a href="#about">Sobre mí</a>
-      <a href="#projects">Proyectos</a>
-      <a href="#" id="contactBtn">Contacto</a>
-    </nav>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <p>
-      Diseñadora de producto con una mirada multidisciplinar, creativa y curiosa.
-      Mi trabajo se caracteriza por un enfoque inquieto y rebelde que cuestiona
-      lo establecido, buscando soluciones innovadoras.
-    </p>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="projects" id="projects">
-
-    <article class="project-card" data-project="cumming">
-      <div class="project-cover"></div>
-      <div class="project-info">
-        <span class="num">01</span>
-        <h2>CUMMMING</h2>
-        <p>Creación de marca, identidad y packaging.</p>
-      </div>
-    </article>
-
-    <article class="project-card" data-project="gnomo">
-      <div class="project-cover"></div>
-      <div class="project-info">
-        <span class="num">02</span>
-        <h2>GNOMO</h2>
-        <p>Packaging lúdico sostenible.</p>
-      </div>
-    </article>
-
-    <article class="project-card" data-project="moxie">
-      <div class="project-cover"></div>
-      <div class="project-info">
-        <span class="num">03</span>
-        <h2>MOXIE</h2>
-        <p>App contra la ansiedad social.</p>
-      </div>
-    </article>
-
-    <article class="project-card" data-project="musu">
-      <div class="project-cover"></div>
-      <div class="project-info">
-        <span class="num">04</span>
-        <h2>MUSU</h2>
-        <p>Herramienta funcional de doble uso.</p>
-      </div>
-    </article>
-
-    <article class="project-card" data-project="paticleta">
-      <div class="project-cover"></div>
-      <div class="project-info">
-        <span class="num">05</span>
-        <h2>PATICLETA</h2>
-        <p>Vehículo infantil de equilibrio.</p>
-      </div>
-    </article>
-
-    <article class="project-card" data-project="trump">
-      <div class="project-cover"></div>
-      <div class="project-info">
-        <span class="num">06</span>
-        <h2>TRMP</h2>
-        <p>Muñeco crítico caricaturizado en 3D.</p>
-      </div>
-    </article>
-
-  </section>
-
-  <!-- LIGHTBOX -->
-  <div id="lightbox" class="hidden">
-    <button id="prev">‹</button>
-    <img id="lightbox-img">
-    <button id="next">›</button>
+  <!-- ALERT PRINCIPAL -->
+  <div class="alert main-alert">
+    <div class="alert-header">
+      <span>System Warning</span>
+      <span class="x">✕</span>
+    </div>
+    <div class="alert-body">
+      <!--  ESTE TEXTO LO PUEDES CAMBIAR CUANDO QUIERAS -->
+      <p>
+        This site may contain experimental content.<br>
+        Proceed at your own risk.
+      </p>
+    </div>
+    <div class="alert-footer">
+      <button id="proceedBtn">Proceed</button>
+    </div>
   </div>
 
-</div>
-
-<!-- JS -->
-<script src="JS/main.js"></script>
-<script src="JS/portfolio.js"></script>
-
+  <script src="../JS/main.js"></script>
 </body>
 </html>
-
-
+</body>
+</html>
