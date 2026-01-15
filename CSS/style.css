@@ -97,3 +97,14 @@ body {
   font-size: 14px;
   padding: 8px 20px;
 }
+.alert {
+  position: relative;
+  z-index: 9999;
+}
+
+.alert button {
+  position: relative;
+  z-index: 10000;
+  pointer-events: auto;
+}
+
